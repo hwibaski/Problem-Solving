@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){
+              let answer="";
+              for(let i = 0; i < s.length; i++){
+                // console.log(s[i], i, s.indexOf(s[i]))
+                // indexOf의 index와 자기 본연의 인덱스가 같은 값
+                if(s.indexOf(s[i])===i)
+                  answer+=s[i]
+              }
+
+              return answer;
+            }
+            console.log(solution("ksekkset"));
+        </script>
+    </body>
+</html>
